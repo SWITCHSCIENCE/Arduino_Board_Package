@@ -1,0 +1,89 @@
+menu.softdevice=Bootloader
+menu.debug=Debug
+
+# ----------------------------------
+# Switch Science ISP1807 Breakout
+# ----------------------------------
+isp1807breakout.name=Switch Science ISP1807 Breakout
+isp1807breakout.bootloader.tool=adafruit:bootburn
+
+# Upload
+isp1807breakout.upload.tool=adafruit:nrfutil
+isp1807breakout.upload.protocol=nrfutil
+isp1807breakout.upload.use_1200bps_touch=true
+isp1807breakout.upload.wait_for_upload_port=true
+isp1807breakout.upload.maximum_size=815104
+isp1807breakout.upload.maximum_data_size=237568
+
+# Build
+isp1807breakout.build.mcu=cortex-m4
+isp1807breakout.build.f_cpu=64000000
+isp1807breakout.build.board=NRF52840_PCA10056
+isp1807breakout.build.core=adafruit:nRF5
+isp1807breakout.build.variant=adafruit:pca10056
+isp1807breakout.build.usb_manufacturer="Switch Science, Inc."
+isp1807breakout.build.usb_product="Switch Science ISP1807 Breakout"
+isp1807breakout.build.extra_flags=-DNRF52840_XXAA {build.flags.usb}
+isp1807breakout.build.ldscript=nrf52840_s140_v6.ld
+isp1807breakout.build.vid=0x2786
+isp1807breakout.build.pid=0x920D
+
+# SofDevice Menu
+isp1807breakout.menu.softdevice.s140v6=0.3.2 SoftDevice s140 6.1.1
+isp1807breakout.menu.softdevice.s140v6.build.sd_name=s140
+isp1807breakout.menu.softdevice.s140v6.build.sd_version=6.1.1
+isp1807breakout.menu.softdevice.s140v6.build.sd_fwid=0x00B6
+
+# Debug Menu
+isp1807breakout.menu.debug.l0=Level 0 (Release)
+isp1807breakout.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+isp1807breakout.menu.debug.l1=Level 1 (Error Message)
+isp1807breakout.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+isp1807breakout.menu.debug.l2=Level 2 (Full Debug)
+isp1807breakout.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+isp1807breakout.menu.debug.l3=Level 3 (Segger SystemView)
+isp1807breakout.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+isp1807breakout.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
+
+# ----------------------------------
+# Switch Science ISP1507 Breakout
+# ----------------------------------
+isp1507breakout.name=Switch Science ISP1507 Breakout
+isp1507breakout.bootloader.tool=adafruit:bootburn
+
+# Upload
+isp1507breakout.upload.tool=adafruit:nrfutil
+isp1507breakout.upload.protocol=nrfutil
+isp1507breakout.upload.use_1200bps_touch=false
+isp1507breakout.upload.wait_for_upload_port=false
+isp1507breakout.upload.native_usb=false
+isp1507breakout.upload.maximum_size=290816
+isp1507breakout.upload.maximum_data_size=52224
+
+# Build
+isp1507breakout.build.mcu=cortex-m4
+isp1507breakout.build.f_cpu=64000000
+isp1507breakout.build.board=NRF52832_FEATHER
+isp1507breakout.build.core=adafruit:nRF5
+isp1507breakout.build.variant=adafruit:feather_nrf52832
+isp1507breakout.build.usb_manufacturer="Switch Science, Inc."
+isp1507breakout.build.usb_product="Switch Science ISP1507 Breakout"
+isp1507breakout.build.extra_flags=-DNRF52832_XXAA -DNRF52
+isp1507breakout.build.ldscript=nrf52832_s132_v6.ld
+
+# SofDevice Menu
+isp1507breakout.menu.softdevice.s132v6=0.3.2 SoftDevice s132 6.1.1
+isp1507breakout.menu.softdevice.s132v6.build.sd_name=s132
+isp1507breakout.menu.softdevice.s132v6.build.sd_version=6.1.1
+isp1507breakout.menu.softdevice.s132v6.build.sd_fwid=0x00B7
+
+# Debug Menu
+isp1507breakout.menu.debug.l0=Level 0 (Release)
+isp1507breakout.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+isp1507breakout.menu.debug.l1=Level 1 (Error Message)
+isp1507breakout.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+isp1507breakout.menu.debug.l2=Level 2 (Full Debug)
+isp1507breakout.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+isp1507breakout.menu.debug.l3=Level 3 (Segger SystemView)
+isp1507breakout.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+isp1507breakout.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
