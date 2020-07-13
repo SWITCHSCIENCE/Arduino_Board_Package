@@ -10,7 +10,7 @@
 
 Arduino IDEを起動し`ファイル > 環境設定 > 追加のボードマネージャURL:`に次のURLを追記してください。
 ```
-https://raw.githubusercontent.com/SWITCHSCIENCE/Arduino_Board_Package/package_Switch_Science_index.json
+https://raw.githubusercontent.com/SWITCHSCIENCE/Arduino_Board_Package/master/package_Switch_Science_index.json
 ```
 `nRF52 Boards`は`Adafruit`のサポートファイルを参照する為、下記URLも`追加のボードマネージャURL`に追記してください。
 ```
