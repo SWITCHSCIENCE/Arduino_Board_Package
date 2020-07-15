@@ -19,8 +19,8 @@
                     },
                     "url": "https://raw.githubusercontent.com/SWITCHSCIENCE/Arduino_Board_Package/master/packages/Switch_Science_nRF52_Boards-0.1.4.tar.gz",
                     "archiveFileName": "Switch_Science_nRF52_Boards-0.1.4.tar.gz",
-                    "checksum": "SHA-256:9ab59108bed9098ea48dfd975dfa2d425cb52cf182eb753ef849f3b2764009ed",
-                    "size": "14714880",
+                    "checksum": "SHA-256:233e9d2c318cad16f2160e5564adceadc6c1342cf5c5c9ee835652d020334bb9",
+                    "size": "14494066",
                     "boards": [
                         {
                             "name": "ISP1807 Breakout"
