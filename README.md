@@ -3,8 +3,9 @@
 このリポジトリには、以下のSwitch ScienceのArduino互換開発ボードのサポートファイルが含まれています。
 
 ### nRF52 Boards
-* ISP1807 Breakout
-* ISP1507 Breakout
+* 6100 ISP1807 Breakout
+* 6490 ISP1507 Breakout
+* 6250 BLE-SS dev board Multi Sensor
 
 ### インストール
 

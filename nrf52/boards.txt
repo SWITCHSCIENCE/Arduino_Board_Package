@@ -87,3 +87,57 @@ isp1507breakout.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
 isp1507breakout.menu.debug.l3=Level 3 (Segger SystemView)
 isp1507breakout.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
 isp1507breakout.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
+
+# ----------------------------------
+# Switch Science BLE-SS dev board Multi Sensor
+# ----------------------------------
+blessdevboardmultisensor.name=Switch Science BLE-SS dev board Multi Sensor
+
+# VID/PID for bootloader with/without UF2, Arduino + Circuitpython App
+blessdevboardmultisensor.vid.0=0x2786
+blessdevboardmultisensor.pid.0=0x920A
+blessdevboardmultisensor.vid.1=0x2786
+blessdevboardmultisensor.pid.1=0x9208
+blessdevboardmultisensor.vid.2=0x2786
+blessdevboardmultisensor.pid.2=0x9209
+blessdevboardmultisensor.vid.3=0x2786
+blessdevboardmultisensor.pid.3=0x9207
+
+# Upload
+blessdevboardmultisensor.bootloader.tool=adafruit:bootburn
+blessdevboardmultisensor.upload.tool=adafruit:nrfutil
+blessdevboardmultisensor.upload.protocol=nrfutil
+blessdevboardmultisensor.upload.use_1200bps_touch=true
+blessdevboardmultisensor.upload.wait_for_upload_port=true
+blessdevboardmultisensor.upload.maximum_size=815104
+blessdevboardmultisensor.upload.maximum_data_size=237568
+
+# Build
+blessdevboardmultisensor.build.mcu=cortex-m4
+blessdevboardmultisensor.build.f_cpu=64000000
+blessdevboardmultisensor.build.board=NRF52840_FEATHER
+blessdevboardmultisensor.build.core=adafruit:nRF5
+blessdevboardmultisensor.build.variant=bless_dev_board_multi_sensor
+blessdevboardmultisensor.build.usb_manufacturer="Switch Science, Inc."
+blessdevboardmultisensor.build.usb_product="BLE-SS dev board Multi Sensor"
+blessdevboardmultisensor.build.extra_flags=-DNRF52840_XXAA {build.flags.usb}
+blessdevboardmultisensor.build.ldscript=nrf52840_s140_v6.ld
+blessdevboardmultisensor.build.vid=0x2786
+blessdevboardmultisensor.build.pid=0x920A
+
+# SofDevice Menu
+blessdevboardmultisensor.menu.softdevice.s140v6=0.3.2 SoftDevice s140 6.1.1
+blessdevboardmultisensor.menu.softdevice.s140v6.build.sd_name=s140
+blessdevboardmultisensor.menu.softdevice.s140v6.build.sd_version=6.1.1
+blessdevboardmultisensor.menu.softdevice.s140v6.build.sd_fwid=0x00B6
+
+# Debug Menu
+blessdevboardmultisensor.menu.debug.l0=Level 0 (Release)
+blessdevboardmultisensor.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+blessdevboardmultisensor.menu.debug.l1=Level 1 (Error Message)
+blessdevboardmultisensor.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+blessdevboardmultisensor.menu.debug.l2=Level 2 (Full Debug)
+blessdevboardmultisensor.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+blessdevboardmultisensor.menu.debug.l3=Level 3 (Segger SystemView)
+blessdevboardmultisensor.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+blessdevboardmultisensor.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1

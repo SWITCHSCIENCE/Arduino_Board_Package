@@ -12,6 +12,50 @@
                 {
                     "name": "Switch Science nRF52 Boards",
                     "architecture": "nrf52",
+                    "version": "0.1.4",
+                    "category": "Contributed",
+                    "help": {
+                        "online": "https://github.com/SWITCHSCIENCE/Arduino_Board_Package"
+                    },
+                    "url": "https://raw.githubusercontent.com/SWITCHSCIENCE/Arduino_Board_Package/master/packages/Switch_Science_nRF52_Boards-0.1.4.zip",
+                    "archiveFileName": "Switch_Science_nRF52_Boards-0.1.4.zip",
+                    "checksum": "SHA-256:b7e23dc538970a1f54c244ec832344467499db7607f37ec11923cd6adce4eeda",
+                    "size": "14495985",
+                    "boards": [
+                        {
+                            "name": "ISP1807 Breakout",
+                            "name": "ISP1507 Breakout",
+                            "name": "BLE-SS dev board Multi Sensor"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "adafruit",
+                            "name": "arm-none-eabi-gcc",
+                            "version": "9-2019q4"
+                        },
+                        {
+                            "packager": "adafruit",
+                            "name": "nrfjprog",
+                            "version": "9.4.0"
+                        }
+                    ]
+                }
+            ],
+            "tools": []
+        },
+        {
+            "name": "switchscience",
+            "maintainer": "Switch Science, Inc.",
+            "websiteURL": "https://github.com/SWITCHSCIENCE/Arduino_Board_Package",
+            "email": "",
+            "help": {
+                "online": "https://github.com/SWITCHSCIENCE/Arduino_Board_Package"
+            },
+            "platforms": [
+                {
+                    "name": "Switch Science nRF52 Boards",
+                    "architecture": "nrf52",
                     "version": "0.1.3",
                     "category": "Contributed",
                     "help": {

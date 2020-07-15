@@ -1,2 +1,2 @@
 name=Switch Science nRF52 Boards
-version=0.1.3
+version=0.1.4
