@@ -17,10 +17,10 @@
                     "help": {
                         "online": "https://github.com/SWITCHSCIENCE/Arduino_Board_Package"
                     },
-                    "url": "https://raw.githubusercontent.com/SWITCHSCIENCE/Arduino_Board_Package/master/packages/Switch_Science_nRF52_Boards-0.1.4.zip",
-                    "archiveFileName": "Switch_Science_nRF52_Boards-0.1.4.zip",
-                    "checksum": "SHA-256:7c239a31fc2b43167cafc8e676653059dc69ccb4aa7b01df030d68b68e218fd0",
-                    "size": "14499185",
+                    "url": "https://raw.githubusercontent.com/SWITCHSCIENCE/Arduino_Board_Package/master/packages/Switch_Science_nRF52_Boards-0.1.4.tar.gz",
+                    "archiveFileName": "Switch_Science_nRF52_Boards-0.1.4.tar.gz",
+                    "checksum": "SHA-256:4d44e9165e6bd4276ba65798b7cfba8a08d0e5ee056a43e7000d0ff035a0b6f1",
+                    "size": "14714880",
                     "boards": [
                         {
                             "name": "ISP1807 Breakout",
