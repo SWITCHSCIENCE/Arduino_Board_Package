@@ -1,0 +1,35 @@
+# ----------------------------------
+# 3914 Switch Science Pro Micro
+# ----------------------------------
+sspromicro.name=Switch Science Pro Micro
+sspromicro.vid.0=0x2786
+sspromicro.pid.0=0x9205
+sspromicro.vid.1=0x2786
+sspromicro.pid.1=0x9206
+
+sspromicro.upload.tool=arduino:avrdude
+sspromicro.upload.protocol=avr109
+sspromicro.upload.maximum_size=28672
+sspromicro.upload.maximum_data_size=2560
+sspromicro.upload.speed=57600
+sspromicro.upload.disable_flushing=true
+sspromicro.upload.use_1200bps_touch=true
+sspromicro.upload.wait_for_upload_port=true
+
+sspromicro.bootloader.tool=arduino:avrdude
+sspromicro.bootloader.low_fuses=0xff
+sspromicro.bootloader.high_fuses=0xd8
+sspromicro.bootloader.extended_fuses=0xcb
+sspromicro.bootloader.file=caterina/Caterina-promicro16_SSCI.hex
+sspromicro.bootloader.unlock_bits=0x3F
+sspromicro.bootloader.lock_bits=0x2F
+
+sspromicro.build.mcu=atmega32u4
+sspromicro.build.f_cpu=16000000L
+sspromicro.build.vid=0x2786
+sspromicro.build.pid=0x9206
+sspromicro.build.usb_product="Switch Science Pro Micro"
+sspromicro.build.board=AVR_LEONARDO
+sspromicro.build.core=arduino:arduino
+sspromicro.build.variant=arduino:leonardo
+sspromicro.build.extra_flags={build.usb_flags}
