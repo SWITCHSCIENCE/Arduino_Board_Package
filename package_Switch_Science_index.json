@@ -10,6 +10,25 @@
             },
             "platforms": [
                 {
+                    "name": "Switch Science AVR Boards",
+                    "architecture": "avr",
+                    "version": "0.1.0",
+                    "category": "Contributed",
+                    "help": {
+                        "online": "https://github.com/SWITCHSCIENCE/Arduino_Board_Package"
+                    },
+                    "url": "https://raw.githubusercontent.com/SWITCHSCIENCE/Arduino_Board_Package/master/packages/Switch_Science_AVR_Boards-0.1.0.tar.gz",
+                    "archiveFileName": "Switch_Science_AVR_Boards-0.1.0.tar.gz",
+                    "checksum": "SHA-256:4da197dfe2bb862d5a4e80927254b0353c3066a828eece526deec41944670012",
+                    "size": "5277",
+                    "boards": [
+                        {
+                            "name": "Switch Science Pro Micro"
+                        }
+                    ],
+                    "toolsDependencies": []
+                },
+                {
                     "name": "Switch Science nRF52 Boards",
                     "architecture": "nrf52",
                     "version": "0.1.5",
