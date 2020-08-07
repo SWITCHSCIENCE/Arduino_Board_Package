@@ -2,6 +2,9 @@
 
 このリポジトリには、以下のSwitch ScienceのArduino互換開発ボードのサポートファイルが含まれています。
 
+### AVR Boards
+* 3914 Switch Science Pro Micro
+
 ### nRF52 Boards
 * 6100 ISP1807 Breakout
 * 6490 ISP1507 Breakout
