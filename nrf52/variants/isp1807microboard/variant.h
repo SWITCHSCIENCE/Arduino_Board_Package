@@ -2,7 +2,7 @@
   Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
   Copyright (c) 2016 Sandeep Mistry All right reserved.
   Copyright (c) 2018, Adafruit Industries (adafruit.com)
-  Copyright (c) 2020, Switch Science, Inc. (switch-science.com)
+  Copyright (c) 2021, Switch Science, Inc. (switch-science.com)
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -17,8 +17,8 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifndef _VARIANT_ISP1807_BREAKOUT_
-#define _VARIANT_ISP1807_BREAKOUT_
+#ifndef _VARIANT_ISP1807_MICRO_BOARD_
+#define _VARIANT_ISP1807_MICRO_BOARD_
 
 /** Master clock frequency */
 #define VARIANT_MCK       (64000000ul)
@@ -38,13 +38,13 @@ extern "C"
 #endif // __cplusplus
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (48)
-#define NUM_DIGITAL_PINS     (48)
+#define PINS_COUNT           (22)
+#define NUM_DIGITAL_PINS     (22)
 #define NUM_ANALOG_INPUTS    (8)
 #define NUM_ANALOG_OUTPUTS   (0)
 
 // LEDs
-#define PIN_LED1             (6)
+#define PIN_LED1             (17)
 
 #define LED_BUILTIN          PIN_LED1
 #define LED_CONN             PIN_LED1
@@ -55,21 +55,16 @@ extern "C"
 #define LED_STATE_ON         0         // State when LED is litted
 
 /*
- * Buttons
- */
-#define PIN_BUTTON1          (38)
-
-/*
  * Analog pins
  */
-#define PIN_A0               (2)
-#define PIN_A1               (3)
-#define PIN_A2               (4)
-#define PIN_A3               (5)
-#define PIN_A4               (28)
-#define PIN_A5               (29)
-#define PIN_A6               (30)
-#define PIN_A7               (31)
+#define PIN_A0               (18)
+#define PIN_A1               (19)
+#define PIN_A2               (20)
+#define PIN_A3               (21)
+#define PIN_A4               (4)
+#define PIN_A5               (2)
+#define PIN_A6               (1)
+#define PIN_A7               (17)
 
 static const uint8_t A0  = PIN_A0 ;
 static const uint8_t A1  = PIN_A1 ;
@@ -83,27 +78,27 @@ static const uint8_t A7  = PIN_A7 ;
 
 // Other pins
 #define PIN_AREF           PIN_A7
-#define PIN_NFC1           (9)
-#define PIN_NFC2           (10)
+#define PIN_NFC1           (5)
+#define PIN_NFC2           (7)
 
 static const uint8_t AREF = PIN_AREF;
 
 /*
  * Serial interfaces
  */
-#define PIN_SERIAL1_RX      (25)
-#define PIN_SERIAL1_TX      (11)
+#define PIN_SERIAL1_RX      (0)
+#define PIN_SERIAL1_TX      (1)
 
 /*
  * SPI Interfaces
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO         (12)
-#define PIN_SPI_MOSI         (10)
-#define PIN_SPI_SCK          (14)
+#define PIN_SPI_MISO         (14)
+#define PIN_SPI_MOSI         (16)
+#define PIN_SPI_SCK          (15)
 
-static const uint8_t SS   = 9 ;
+static const uint8_t SS   = 10 ;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
@@ -113,11 +108,11 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
  */
 #define WIRE_INTERFACES_COUNT 2
 
-#define PIN_WIRE_SDA         (19)
-#define PIN_WIRE_SCL         (23)
+#define PIN_WIRE_SDA         (2)
+#define PIN_WIRE_SCL         (3)
 
-#define PIN_WIRE1_SDA        (26)
-#define PIN_WIRE1_SCL        (27)
+#define PIN_WIRE1_SDA        (5)
+#define PIN_WIRE1_SCL        (6)
 
 #ifdef __cplusplus
 }

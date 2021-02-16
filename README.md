@@ -6,9 +6,11 @@
 * 3914 Switch Science Pro Micro
 
 ### nRF52 Boards
-* 6100 ISP1807 Breakout
-* 6490 ISP1507 Breakout
-* 6250 BLE-SS dev board Multi Sensor
+* 6100 Switch Science ISP1807 Breakout
+* 6250 Switch Science BLE-SS dev board Multi Sensor
+* 6490 Switch Science ISP1507 Breakout
+* 6761 Raytac MDBT50Q-RX Dongle (Bootloader available)
+* 6939 Switch Science ISP1807 Micro Board
 
 ### インストール
 
