@@ -1,0 +1,67 @@
+■はじめに
+
+
+
+■開発版リリース手順
+
+1.パッケージ作成
+cp -r nrf52 Switch_Science_nRF52_Boards-0.1.8
+tar cfvz packages/Switch_Science_nRF52_Boards-0.1.8.tar.gz Switch_Science_nRF52_Boards-0.1.8/
+tar -tf packages/Switch_Science_nRF52_Boards-0.1.8.tar.gz
+
+※macOS向けの実行ファイルが入っているのでtarで固めてください
+
+2.package_Switch_Science_dev_index.jsonの編集
+
+前のバージョンのパッケージ情報をコピー
+
+    ...
+    {
+        "name": "Switch Science nRF52 Boards",
+        "version": "0.1.7",
+        ...
+    },
+    ...
+
+↑の上にペースト。バージョン情報とパッケージファイルのURLと名前、SH256※1、ファイルサイズ※2を書き換え。
+※1 shasum -a 256 packages/Switch_Science_nRF52_Boards-0.1.8.tar.gz
+※2 ls -la packages/Switch_Science_nRF52_Boards-0.1.8.tar.gz
+
+    ...
+    {
+        "name": "Switch Science nRF52 Boards",
+        "version": "0.1.8",
+        ...
+        "url": "https://raw.githubusercontent.com/SWITCHSCIENCE/Arduino_Board_Package/master/packages/Switch_Science_nRF52_Boards-0.1.8.tar.gz",
+        "archiveFileName": "Switch_Science_nRF52_Boards-0.1.8.tar.gz",
+        "checksum": "SHA-256:7ce136a1c778f0c494c6faa3f6acec6fa65ad03080668780593c1be625db5a5e",
+        "size": "14495710",
+        ...
+    },
+    {
+        "name": "Switch Science nRF52 Boards",
+        "version": "0.1.7",
+        ...
+    },
+    ...
+
+3.gitに追加
+git add package_Switch_Science_dev_index.json
+git add packages/Switch_Science_nRF52_Boards-0.1.8.tar.gz
+
+4.commit
+git commit -m "add nRF52 0.1.8"
+
+■開発版動作確認
+
+追加のボードマネージャURLに次のURLを追加、追加したパッケージをインストールして動作確認
+・ダウンロードできるか(Windows)？
+・ビルドできるか(Windows)？
+・ダウンロードできるか(macOS)？
+・ビルドできるか(macOS)？
+https://raw.githubusercontent.com/SWITCHSCIENCE/Arduino_Board_Package/master/package_Switch_Science_dev_index.json
+
+■正式版リリース手順
+cp package_Switch_Science_dev_index.json package_Switch_Science_index.json
+git add package_Switch_Science_index.json
+git commit -m "nRF52 0.1.8 release"
