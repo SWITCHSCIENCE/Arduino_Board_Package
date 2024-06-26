@@ -229,3 +229,46 @@ mdbt50qrx.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
 mdbt50qrx.menu.debug.l3=Level 3 (Segger SystemView)
 mdbt50qrx.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
 mdbt50qrx.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
+
+# ----------------------------------
+# Switch Science MDBT42V Breakout
+# ----------------------------------
+mdbt42vbreakout.name=Switch Science MDBT42V Breakout
+mdbt42vbreakout.bootloader.tool=adafruit:bootburn
+
+# Upload
+mdbt42vbreakout.upload.tool=adafruit:nrfutil
+mdbt42vbreakout.upload.protocol=nrfutil
+mdbt42vbreakout.upload.use_1200bps_touch=false
+mdbt42vbreakout.upload.wait_for_upload_port=false
+mdbt42vbreakout.upload.native_usb=false
+mdbt42vbreakout.upload.maximum_size=290816
+mdbt42vbreakout.upload.maximum_data_size=52224
+
+# Build
+mdbt42vbreakout.build.mcu=cortex-m4
+mdbt42vbreakout.build.f_cpu=64000000
+mdbt42vbreakout.build.board=SSCI_MDBT42V_BREAKOUT
+mdbt42vbreakout.build.core=adafruit:nRF5
+mdbt42vbreakout.build.variant=mdbt42vbreakout
+mdbt42vbreakout.build.usb_manufacturer="Switch Science, Inc."
+mdbt42vbreakout.build.usb_product="SSCI MDBT42V Breakout"
+mdbt42vbreakout.build.extra_flags=-DNRF52832_XXAA -DNRF52
+mdbt42vbreakout.build.ldscript=nrf52832_s132_v6.ld
+
+# SofDevice Menu
+mdbt42vbreakout.menu.softdevice.s132v6=0.3.2 SoftDevice s132 6.1.1
+mdbt42vbreakout.menu.softdevice.s132v6.build.sd_name=s132
+mdbt42vbreakout.menu.softdevice.s132v6.build.sd_version=6.1.1
+mdbt42vbreakout.menu.softdevice.s132v6.build.sd_fwid=0x00B7
+
+# Debug Menu
+mdbt42vbreakout.menu.debug.l0=Level 0 (Release)
+mdbt42vbreakout.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+mdbt42vbreakout.menu.debug.l1=Level 1 (Error Message)
+mdbt42vbreakout.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+mdbt42vbreakout.menu.debug.l2=Level 2 (Full Debug)
+mdbt42vbreakout.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+mdbt42vbreakout.menu.debug.l3=Level 3 (Segger SystemView)
+mdbt42vbreakout.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+mdbt42vbreakout.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
