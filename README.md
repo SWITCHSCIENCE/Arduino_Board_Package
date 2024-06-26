@@ -11,6 +11,7 @@
 * 6490 Switch Science ISP1507 Breakout
 * 6761 Raytac MDBT50Q-RX Dongle (Bootloader available)
 * 6939 Switch Science ISP1807 Micro Board
+* 9626 Switch Science MDBT42V Breakout
 
 ### インストール
 
@@ -20,5 +21,5 @@ https://raw.githubusercontent.com/SWITCHSCIENCE/Arduino_Board_Package/master/pac
 ```
 `nRF52 Boards`は`Adafruit`のサポートファイルを参照する為、下記URLも`追加のボードマネージャURL`に追記してください。
 ```
-https://www.adafruit.com/package_adafruit_index.json
+https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 ```
